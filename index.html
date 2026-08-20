@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Education - Learning Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Samuel Education</h1>
+            <p>Welcome to School Learning Portal</p>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#notice">Notice Board</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Welcome Banner -->
+        <section class="banner" id="home">
+            <h2>Padhai Hue Aasaan!</h2>
+            <p>Apni class ke notes, syllabus aur study material yahan se download karein.</p>
+        </section>
+
+        <!-- Classes Section -->
+        <section id="classes">
+            <h2 class="section-title">Select Your Class</h2>
+            <div class="grid">
+                <div class="card" onclick="selectClass('Class 6')">
+                    <h3>Class 6th</h3>
+                    <p>Notes & Syllabus</p>
+                </div>
+                <div class="card" onclick="selectClass('Class 7')">
+                    <h3>Class 7th</h3>
+                    <p>Notes & Syllabus</p>
+                </div>
+                <div class="card" onclick="selectClass('Class 8')">
+                    <h3>Class 8th</h3>
+                    <p>Notes & Syllabus</p>
+                </div>
+                <div class="card" onclick="selectClass('Class 9')">
+                    <h3>Class 9th</h3>
+                    <p>Notes & Syllabus</p>
+                </div>
+                <div class="card" onclick="selectClass('Class 10')">
+                    <h3>Class 10th</h3>
+                    <p>Notes & Syllabus</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material Download Section -->
+        <section id="subjects">
+            <h2 class="section-title">Study Material</h2>
+            <ul class="material-list">
+                <li><span>Mathematics Books & Solution</span> <button onclick="downloadPdf('Maths')">Open</button></li>
+                <li><span>Science Notes & Experiments</span> <button onclick="downloadPdf('Science')">Open</button></li>
+                <li><span>English Grammar Worksheets</span> <button onclick="downloadPdf('English')">Open</button></li>
+                <li><span>Social Studies Map Practice</span> <button onclick="downloadPdf('SST')">Open</button></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Samuel Education. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
